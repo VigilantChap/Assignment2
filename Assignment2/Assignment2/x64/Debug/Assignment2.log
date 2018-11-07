@@ -1,0 +1,41 @@
+﻿Character.obj : error LNK2019: unresolved external symbol SDL_FreeSurface referenced in function "public: __cdecl Character::~Character(void)" (??1Character@@QEAA@XZ)
+Task1.obj : error LNK2001: unresolved external symbol SDL_FreeSurface
+Character.obj : error LNK2019: unresolved external symbol SDL_CreateTextureFromSurface referenced in function "public: __cdecl Character::Character(struct SDL_Renderer *)" (??0Character@@QEAA@PEAUSDL_Renderer@@@Z)
+Task1.obj : error LNK2001: unresolved external symbol SDL_CreateTextureFromSurface
+Character.obj : error LNK2019: unresolved external symbol SDL_SetRenderDrawColor referenced in function "public: void __cdecl Character::Render(void)" (?Render@Character@@QEAAXXZ)
+Task1.obj : error LNK2001: unresolved external symbol SDL_SetRenderDrawColor
+Character.obj : error LNK2019: unresolved external symbol SDL_RenderFillRect referenced in function "public: void __cdecl Character::Render(void)" (?Render@Character@@QEAAXXZ)
+Character.obj : error LNK2019: unresolved external symbol SDL_RenderCopy referenced in function "public: void __cdecl Character::Render(void)" (?Render@Character@@QEAAXXZ)
+Task1.obj : error LNK2001: unresolved external symbol SDL_RenderCopy
+Character.obj : error LNK2019: unresolved external symbol SDL_DestroyTexture referenced in function "public: __cdecl Character::~Character(void)" (??1Character@@QEAA@XZ)
+Task1.obj : error LNK2001: unresolved external symbol SDL_DestroyTexture
+Character.obj : error LNK2019: unresolved external symbol SDL_DestroyRenderer referenced in function "public: __cdecl Character::~Character(void)" (??1Character@@QEAA@XZ)
+SceneHandler.obj : error LNK2001: unresolved external symbol SDL_DestroyRenderer
+Task1.obj : error LNK2001: unresolved external symbol SDL_DestroyRenderer
+Window.obj : error LNK2001: unresolved external symbol SDL_DestroyRenderer
+Character.obj : error LNK2019: unresolved external symbol IMG_Load referenced in function "public: __cdecl Character::Character(struct SDL_Renderer *)" (??0Character@@QEAA@PEAUSDL_Renderer@@@Z)
+GameManager.obj : error LNK2019: unresolved external symbol SDL_PollEvent referenced in function "public: void __cdecl GameManager::Run(void)" (?Run@GameManager@@QEAAXXZ)
+GameManager.obj : error LNK2019: unresolved external symbol SDL_Quit referenced in function "public: void __cdecl GameManager::Run(void)" (?Run@GameManager@@QEAAXXZ)
+Window.obj : error LNK2001: unresolved external symbol SDL_Quit
+Task1.obj : error LNK2019: unresolved external symbol SDL_GetWindowSize referenced in function "public: virtual bool __cdecl Task1::OnCreate(void)" (?OnCreate@Task1@@UEAA_NXZ)
+Task1.obj : error LNK2019: unresolved external symbol SDL_DestroyWindow referenced in function "public: virtual void __cdecl Task1::OnDestroy(void)" (?OnDestroy@Task1@@UEAAXXZ)
+Window.obj : error LNK2001: unresolved external symbol SDL_DestroyWindow
+Task1.obj : error LNK2019: unresolved external symbol SDL_RenderClear referenced in function "public: virtual void __cdecl Task1::Render(void)" (?Render@Task1@@UEAAXXZ)
+Task1.obj : error LNK2019: unresolved external symbol SDL_RenderPresent referenced in function "public: virtual void __cdecl Task1::Render(void)" (?Render@Task1@@UEAAXXZ)
+Task1.obj : error LNK2019: unresolved external symbol TTF_OpenFont referenced in function "public: virtual bool __cdecl Task1::OnCreate(void)" (?OnCreate@Task1@@UEAA_NXZ)
+Task1.obj : error LNK2019: unresolved external symbol TTF_RenderText_Solid referenced in function "public: virtual bool __cdecl Task1::OnCreate(void)" (?OnCreate@Task1@@UEAA_NXZ)
+Task1.obj : error LNK2019: unresolved external symbol TTF_CloseFont referenced in function "public: virtual void __cdecl Task1::OnDestroy(void)" (?OnDestroy@Task1@@UEAAXXZ)
+Timer.obj : error LNK2019: unresolved external symbol SDL_GetTicks referenced in function "public: unsigned int __cdecl Timer::GetSleepTime(unsigned int)const " (?GetSleepTime@Timer@@QEBAII@Z)
+Window.obj : error LNK2019: unresolved external symbol SDL_CreateWindow referenced in function "public: bool __cdecl Window::OnCreate(void)" (?OnCreate@Window@@QEAA_NXZ)
+Window.obj : error LNK2019: unresolved external symbol SDL_CreateRenderer referenced in function "public: bool __cdecl Window::OnCreate(void)" (?OnCreate@Window@@QEAA_NXZ)
+Window.obj : error LNK2019: unresolved external symbol SDL_Init referenced in function "public: bool __cdecl Window::OnCreate(void)" (?OnCreate@Window@@QEAA_NXZ)
+Window.obj : error LNK2019: unresolved external symbol TTF_Init referenced in function "public: bool __cdecl Window::OnCreate(void)" (?OnCreate@Window@@QEAA_NXZ)
+Window.obj : error LNK2019: unresolved external symbol TTF_Quit referenced in function "public: __cdecl Window::~Window(void)" (??1Window@@QEAA@XZ)
+Window.obj : error LNK2019: unresolved external symbol IMG_Init referenced in function "public: bool __cdecl Window::OnCreate(void)" (?OnCreate@Window@@QEAA_NXZ)
+Window.obj : error LNK2019: unresolved external symbol IMG_Quit referenced in function "public: __cdecl Window::~Window(void)" (??1Window@@QEAA@XZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\GameDev\SDL2-2.0.8\lib\x86\SDL2.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\GameDev\SDL2-2.0.8\lib\x86\SDL2main.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\GameDev\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\GameDev\SDL2_image-2.0.3\lib\x86\SDL2_image.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\froli\Documents\GitHub\Assignment2\Assignment2\x64\Debug\Assignment2.exe : fatal error LNK1120: 26 unresolved externals

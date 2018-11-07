@@ -6,6 +6,7 @@
 #include <SDL_ttf.h>
 #include <sstream>
 #include <iomanip>
+#include "Bunny.h"
 
 class Task1 : public Scene
 {

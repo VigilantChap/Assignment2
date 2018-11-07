@@ -1,17 +1,15 @@
-﻿  Character.cpp
-c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
-  c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
-  c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
-c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\character.cpp(26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\character.cpp(27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\character.cpp(42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\froli\documents\classes\second year\fall 2018\c++\assignment2\assignment2\character.cpp(43): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+﻿  Task1.cpp
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\froli\documents\github\assignment2\assignment2\assignment2\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\froli\documents\github\assignment2\assignment2\assignment2\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\task1.cpp(50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Bunny.cpp
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\froli\documents\github\assignment2\assignment2\assignment2\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\froli\documents\github\assignment2\assignment2\assignment2\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\bunny.cpp(24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\bunny.cpp(25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\bunny.cpp(46): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\froli\documents\github\assignment2\assignment2\assignment2\bunny.cpp(47): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Generating Code...
-  Skipping... (no relevant changes detected)
-  UndoManager.cpp
-  Main.cpp
-  GameManager.cpp
-  Task1.cpp
-  SceneHandler.cpp
-  ActionManager.cpp
-  Assignment2.vcxproj -> C:\Users\froli\Documents\Classes\Second Year\Fall 2018\C++\Assignment2\Debug\Assignment2.exe
+  Assignment2.vcxproj -> C:\Users\froli\Documents\GitHub\Assignment2\Assignment2\Debug\Assignment2.exe

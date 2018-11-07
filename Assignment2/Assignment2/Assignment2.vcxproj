@@ -73,6 +73,10 @@
     <IncludePath>C:\GameDev\SDL2_image-2.0.3\include;C:\GameDev\SDL2_ttf-2.0.14\include;C:\GameDev\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\GameDev\SDL2_image-2.0.3\lib\x86;C:\GameDev\SDL2_ttf-2.0.14\lib\x86;C:\GameDev\SDL2-2.0.8\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\GameDev\SDL2-2.0.8\include;C:\GameDev\SDL2_image-2.0.3\include;C:\GameDev\SDL2_ttf-2.0.14\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\GameDev\SDL2_image-2.0.3\lib\x86;C:\GameDev\SDL2_ttf-2.0.14\lib\x86;C:\GameDev\SDL2-2.0.8\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -92,7 +96,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\GameDev\SDL2-2.0.8\lib\x86\SDL2.lib;C:\GameDev\SDL2-2.0.8\lib\x86\SDL2main.lib;C:\GameDev\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib;C:\GameDev\SDL2_image-2.0.3\lib\x86\SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -124,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ActionManager.cpp" />
+    <ClCompile Include="Bunny.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -137,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="ActionManager.h" />
     <ClInclude Include="AddHealth.h" />
+    <ClInclude Include="Bunny.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandFiles.h" />
