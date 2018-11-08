@@ -14,16 +14,32 @@ Task1::~Task1()
 }
 
 void Task1::OnDestroy() {
-	SDL_DestroyWindow(window);
-	SDL_DestroyRenderer(renderer);
-	
+
+	delete unit;
+	//unit = nullptr;
+	delete aManager;
+	//aManager = nullptr;
+
 	TTF_CloseFont(Sans);
 	SDL_DestroyTexture(Message);
-	SDL_FreeSurface(surfaceMessage);
+	SDL_FreeSurface(surfaceMessage); 
+	SDL_DestroyTexture(Wallet);
+	SDL_FreeSurface(surfaceWallet); 
+
 	delete Message_rect;
+	//Message_rect = nullptr;
+
+
+	delete Wallet_rect;
+	//Wallet_rect = nullptr;
+
+
+
 }
 
 bool Task1::OnCreate() {
+	cout << "Task 1" << endl;
+
 	SDL_GetWindowSize(window, &w, &h);
 
 	aManager = new ActionManager();
@@ -39,6 +55,13 @@ bool Task1::OnCreate() {
 		OnDestroy();
 		return false;
 	}
+
+	/*bun = new Bunny(renderer);
+
+	if (bun == nullptr) {
+		OnDestroy();
+		return false;
+	}*/
 
 	unit->moveTo(new Vec2(w/2, h/2));
 
@@ -87,6 +110,7 @@ bool Task1::OnCreate() {
 
 void Task1::Update() {
 	unit->Update();
+	//bun->Update();
 
 	ostringstream str;
 	str << unit->getHealth(); // converting to string
@@ -114,6 +138,7 @@ void Task1::Render() {
 	SDL_RenderClear(renderer);
 
 	unit->Render();
+	//bun->Render();
 
 	//draw messages
 	SDL_RenderCopy(renderer, Message, NULL, Message_rect);

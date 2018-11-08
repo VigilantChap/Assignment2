@@ -1,6 +1,6 @@
 #pragma once
-#include "Entity.h"
 #include "HFiles.h"
+#include "Entity.h"
 
 
 using namespace MATH;
@@ -12,6 +12,7 @@ private:
 	int health;
 	float wallet;
 	bool hasImg;
+	Vec2 * position = nullptr;
 
 	//objects used to render
 	SDL_Rect * rect = nullptr;
@@ -37,5 +38,12 @@ public:
 
 	inline int getHealth() { return health; }
 	inline float walletBalance() { return wallet; }
+
+	inline Vec2 * getPosition() { return position; }
+
+	inline void setImage(string imageName) {
+		image = IMG_Load(imageName.c_str());
+		texture = SDL_CreateTextureFromSurface(renderer, image);
+	}
 };
 

@@ -5,6 +5,8 @@
 class Bunny : public Entity
 {
 private:
+	Vec2 * position = nullptr;
+
 	//objects used to render
 	SDL_Rect * rect = nullptr;
 	SDL_Texture * texture = nullptr;
@@ -19,5 +21,7 @@ public:
 
 	void Update();
 	void Render();
+
+	inline Vec2 * getPosition() { return position; }
 };
 

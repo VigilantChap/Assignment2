@@ -1,7 +1,6 @@
 #pragma once
 #include "HFiles.h"
 #include "Entity.h"
-#include "Subject.h"
 
 class Observer
 {

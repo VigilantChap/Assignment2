@@ -28,7 +28,6 @@ Bunny::Bunny(SDL_Renderer * renderer_)
 
 Bunny::~Bunny()
 {
-	delete position;
 	delete rect;
 
 	SDL_DestroyRenderer(renderer);
@@ -42,7 +41,7 @@ void Bunny::Update() {
 	position->y++;
 
 	//update character's rectangle so that it always equals position
-	//the -50 essentially puts the rect's origin in the middle of itself
+	//the -50 essentially puts the rect's origin in the centre of itself
 	rect->x = position->x - 50;
 	rect->y = position->y - 50;
 }

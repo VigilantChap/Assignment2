@@ -1,7 +1,8 @@
 #pragma once
+
+#include "HFiles.h"
 #include "Character.h"
 #include "Scene.h"
-#include "HFiles.h"
 #include "ActionManager.h"
 #include <SDL_ttf.h>
 #include <sstream>
@@ -40,6 +41,7 @@ private:
 
 
 	Character * unit = nullptr;
+	//Bunny * bun = nullptr;
 	ActionManager * aManager = nullptr;
 };
 

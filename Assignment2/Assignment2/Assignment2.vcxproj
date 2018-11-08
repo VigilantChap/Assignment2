@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -138,8 +138,11 @@
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SceneHandler.cpp" />
+    <ClCompile Include="Square.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="Task1.cpp" />
+    <ClCompile Include="Task2.cpp" />
+    <ClCompile Include="Task3.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="UndoManager.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -159,8 +162,11 @@
     <ClInclude Include="Purchase.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneHandler.h" />
+    <ClInclude Include="Square.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="Task1.h" />
+    <ClInclude Include="Task2.h" />
+    <ClInclude Include="Task3.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="UndoManager.h" />
     <ClInclude Include="Vector.h" />

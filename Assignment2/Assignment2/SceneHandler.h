@@ -2,6 +2,7 @@
 #include "Window.h"
 #include "Scene.h"
 #include "HFiles.h"
+#include <deque>
 
 class SceneHandler
 {
@@ -17,7 +18,10 @@ public:
 private:
 	Window * window = nullptr;
 	SDL_Renderer * renderer = nullptr;
-	Scene * task = nullptr;
+	//Scene * task = nullptr;
+	deque <Scene*> tasks;
+	bool changeScenes;
+
 };
 
 

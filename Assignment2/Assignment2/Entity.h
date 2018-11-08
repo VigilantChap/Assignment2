@@ -5,8 +5,9 @@ using namespace MATH;
 
 class Entity {
 protected:
-	Vec2 * position = nullptr;
 
 public:
-	inline Vec2 * getPosition() { return position; }
+	virtual Vec2 * getPosition() = 0;
+	virtual void Update() = 0;
+	virtual void Render() = 0;
 };
